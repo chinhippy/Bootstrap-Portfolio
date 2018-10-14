@@ -77,10 +77,11 @@ h1 {
 }
 p{
     padding: 20px;
+    font-size: 18px;
 }
 #bio-image{
-    width: 200px;
-    height: 113px;
+    width: 250px;
+    height: 200px;
     float: left;
     margin-right: 10px;
 }
@@ -100,8 +101,8 @@ footer{
 #copyright {
     color: white;
     position: relative;
-    top: 10px;
-}
+    top: 1px;
+    }
 
 /*....... contacts .......*/
 .inputpage{
@@ -145,14 +146,79 @@ footer{
 
 nav {
     height: 90px;
+    /* background-image: url("./images/carbon_fibre.png"); */
 }
 
-@media only screen and (max-width: 768px){
+.navbar-brand {
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 280px;
+    background-color: #666666;
+}
+
+.navigation {
+    background-image: url("./assets/images/carbon_fibre.png");
+
+}
+
+@media(max-width:980px){
+    nav {
+      float: left;
+      margin-left: 20%;
+    }
+  .container{
+  max-width: 100%;
+  }
+  
+  
+  #main-container{
+    float: left;
+   width: 80% ;
+  }
+  
+  @media(max-width:768px){
+    header
+    nav {
+      float: left;
+      margin-left: 20%;
+      /* margin-right: 10%; */
+    }
+    .main-section {
+       
+       margin-bottom:15%;
+       margin-top: 15%;
+    }
+    .container {max-width: 100%;
+    }  
+    #main-container{ width:100%;
+    
+    }
+  
+    
+    @media (max-width: 640px){
+      
+    nav {
+      float: left;
+      margin-left: 10%;
+    }
+    
+    .container { max-width: 100%;
+    
+  
+      }
+      #main-container {
+        max-width: 100%;
+      }
+      #logo{ width: 100%;}
+
+
+/* @media only screen and (max-width: 768px){
     body {
         width: 100%;
     }
 
     .maincontent {
         width: 100%;
-    }
+    } */
 }
